@@ -22,14 +22,32 @@ If we encrypt image `image.bmp` with the CBC mode of operation, encrypted image 
 If we decrypt image `image_eCBC.bmp` with the CBC mode of operation, decrypted image (output file) will be named like: `image_eCBC_dCBC.bmp`
 
 ## How to Run
-1. Make sure you have Java installed (JDK 8+).
-2. Compile the project:
+Make sure you have Java installed (JDK 8+).
+### Linux 
+1. Make bin directory 
 ``` 
-$ javac BMPCipher.java
+$ mkdir -p bin
 ```
-3. Run 
+2. Compile all Java files
+``` 
+$ javac -d bin $(find src -name "*.java")
 ```
-$ java BMPCipher
+3. Run
+``` 
+$ java -cp bin Main
+```
+### Windows 
+1. Make bin directory 
+``` 
+mkdir bin
+```
+2. Compile all Java files
+```
+javac -d bin src\Main.java src\gui\AppWindow.java src\crypto\ImageEncryptor.java src\image\BMPHandler.java
+```
+3. Run
+```
+java -cp bin Main
 ```
 
 ## Notes
