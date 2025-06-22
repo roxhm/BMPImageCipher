@@ -4,6 +4,8 @@ This is a Java desktop application for encrypting and decrypting BMP images usin
 
 Users select an image, specify the mode of operation (ECB, CBC, CFB, OFB), and provide an 8-byte key along with an 8-byte initialization vector.
 
+![Demo](BMPCipherDemo.gif)
+
 ## Features
 Select a `.bmp` image from your system.
 - Choose between **encryption** or **decryption**.
